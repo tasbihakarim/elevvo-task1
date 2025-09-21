@@ -1,0 +1,82 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: rgb(238, 229, 229);
+  transition: left 0.3s ease;
+  padding: 20px;
+  
+}.homepage {
+  display: flex;
+  justify-content: center;   
+  align-items: top;       
+  height: 90vh;             
+  text-align: center;
+}
+
+.brand-name {
+  font-size: 60px;
+  font-family: 'Georgia', serif;  /* elegant font */
+  color: rgb(5, 92, 133);
+  text-transform:capitalize ;      
+  letter-spacing: 5px;           
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* glow effect */
+}
+
+
+.sidebar.active {
+  left: 0;
+}
+html, body {
+  height: 100%;         /* pura screen height */
+  margin: 0;            /* default gap hatao */
+  padding: 0;
+}
+
+body {
+  background-image: url("my2.jpg");
+  background-size: cover;   /* puri screen cover kare */
+  background-repeat: no-repeat;
+  background-position: center;  /* beech me rahe */
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+}
+
+.sidebar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+#toggleBtn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: #000408;
+  color: rgb(213, 230, 227);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 200px;
+  }
+}
